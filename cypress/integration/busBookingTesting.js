@@ -22,7 +22,7 @@ context("Bus booking form validation",()=>{
 
                 it.only("Sucessful submission of form for round trip travellers",()=>{
                   
-                    cy.get('#fName').type("Victor");
+                    cy.get('#fName').type("Umar");
                     cy.get('#date').type("2021-05-05");
                     cy.get('#round-Trip').click();
                     cy.get('#no-of-people').type(6);
@@ -32,7 +32,7 @@ context("Bus booking form validation",()=>{
             });
 
             it.only("Should not submit when name field is empty", ()=>{
-                // cy.get('#fName').type("Victor");
+                // cy.get('#fName').type("Umar");
                     cy.get('#date').type("2021-05-05");
                     cy.get('#round-Trip').click();
                     cy.get('#no-of-people').type(6);
@@ -42,7 +42,7 @@ context("Bus booking form validation",()=>{
               });
 
             //   it.only("Name border color should be red", ()=>{
-            //     // cy.get('#fName').type("Victor");
+            //     // cy.get('#fName').type("Umar");
             //         cy.get('#date').type("2021-05-05");
             //         cy.get('#round-Trip').click();
             //         cy.get('#no-of-people').type(6);
@@ -55,7 +55,7 @@ context("Bus booking form validation",()=>{
             //   });
 
               it.only("Alert should be shown to the user", ()=>{
-                // cy.get('#fName').type("Victor");
+                // cy.get('#fName').type("Umar");
                     cy.get('#date').type("2021-05-05");
                     cy.get('#round-Trip').click();
                     cy.get('#no-of-people').type(6);
@@ -69,7 +69,7 @@ context("Bus booking form validation",()=>{
               });
 
               it.only("Should not submit when date is not selected", ()=>{
-                    cy.get('#fName').type("Victor");
+                    cy.get('#fName').type("Umar");
                     cy.get('#round-Trip').click();
                     cy.get('#no-of-people').type(6);
                     cy.get('textarea').type("Trip to Kumasi")
@@ -77,7 +77,7 @@ context("Bus booking form validation",()=>{
               });
 
               it.only("Should not submit when trip type is not selected is not selected", ()=>{
-                cy.get('#fName').type("Victor");
+                cy.get('#fName').type("Umar");
                 cy.get('#date').type("2021-05-05");
          
                 cy.get('#no-of-people').type(6);
@@ -87,7 +87,7 @@ context("Bus booking form validation",()=>{
 
           
           it.only("Should not submit when No of people is empty", ()=>{
-            cy.get('#fName').type("Victor");
+            cy.get('#fName').type("Umar");
             cy.get('#date').type("2021-05-05");
             cy.get('#no-of-people').type(6);
             cy.get('textarea').type("Trip to Kumasi")
@@ -95,7 +95,7 @@ context("Bus booking form validation",()=>{
       });
 
       it.only("Should not submit when textarea is empty", ()=>{
-        cy.get('#fName').type("Victor");
+        cy.get('#fName').type("Umar");
         cy.get('#date').type("2021-05-05");
         cy.get('#no-of-people').type(6);
         // cy.get('textarea').type("Trip to Kumasi");
@@ -105,7 +105,7 @@ context("Bus booking form validation",()=>{
   });
 
   it.only("Should not submit when only textarea is filled", ()=>{
-    // cy.get('#fName').type("Victor");
+    // cy.get('#fName').type("Umar");
     // cy.get('#date').type("2021-05-05");
     // cy.get('#no-of-people').type(6);
     cy.get('textarea').type("Trip to Kumasi");
@@ -116,8 +116,8 @@ context("Bus booking form validation",()=>{
 });
 
 
-it.only("Should not submit when only Noof people is typed", ()=>{
-    // cy.get('#fName').type("Victor");
+it("Should not submit when only Noof people is typed", ()=>{
+    // cy.get('#fName').type("Umar");
     // cy.get('#date').type("2021-05-05");
     cy.get('#no-of-people').type(6);
     // cy.get('textarea').type("Trip to Kumasi");
@@ -128,8 +128,8 @@ it.only("Should not submit when only Noof people is typed", ()=>{
 });
 
 
-it.only("Should not submit when only No of people is typed", ()=>{
-    // cy.get('#fName').type("Victor");
+it("Should not submit when only No of people is typed", ()=>{
+    // cy.get('#fName').type("Umar");
     // cy.get('#date').type("2021-05-05");
     cy.get('#no-of-people').type(6);
     // cy.get('textarea').type("Trip to Kumasi");
@@ -140,8 +140,8 @@ it.only("Should not submit when only No of people is typed", ()=>{
 });
 
 
-it.only("Should not submit when only date is filled", ()=>{
-    // cy.get('#fName').type("Victor");
+it("Should not submit when only date is filled", ()=>{
+    // cy.get('#fName').type("Umar");
     cy.get('#date').type("2021-05-05");
     // cy.get('#no-of-people').type(6);
     // cy.get('textarea').type("Trip to Kumasi");
@@ -150,8 +150,8 @@ it.only("Should not submit when only date is filled", ()=>{
 });
 
 
-it.only("Should not submit when only date and No of people is filled  ", ()=>{
-    // cy.get('#fName').type("Victor");
+it("Should not submit when only date and No of people is filled  ", ()=>{
+    // cy.get('#fName').type("Umar");
     cy.get('#date').type("2021-05-05");
     cy.get('#no-of-people').type(6);
     // cy.get('textarea').type("Trip to Kumasi");
@@ -160,8 +160,8 @@ it.only("Should not submit when only date and No of people is filled  ", ()=>{
 });
 
 
-it.only("Should not submit when only name and No of people is filled  ", ()=>{
-    cy.get('#fName').type("Victor");
+it("Should not submit when only name and No of people is filled  ", ()=>{
+    cy.get('#fName').type("Umar");
     // cy.get('#date').type("2021-05-05");
     cy.get('#no-of-people').type(6);
     // cy.get('textarea').type("Trip to Kumasi");
@@ -170,8 +170,8 @@ it.only("Should not submit when only name and No of people is filled  ", ()=>{
 });
 
 
-it.only("Should not submit when only date and name is filled  ", ()=>{
-    cy.get('#fName').type("Victor");
+it("Should not submit when only date and name is filled  ", ()=>{
+    cy.get('#fName').type("Umar");
     cy.get('#date').type("2021-05-05");
     // cy.get('#no-of-people').type(6);
     // cy.get('textarea').type("Trip to Kumasi");
@@ -180,8 +180,8 @@ it.only("Should not submit when only date and name is filled  ", ()=>{
 });
 
 
-it.only("Should not submit when only date and comment is filled  ", ()=>{
-    // cy.get('#fName').type("Victor");
+it("Should not submit when only date and comment is filled  ", ()=>{
+    // cy.get('#fName').type("Umar");
     cy.get('#date').type("2021-05-05");
     // cy.get('#no-of-people').type(6);
     cy.get('textarea').type("Travelling back to Kumasi");
@@ -192,8 +192,8 @@ it.only("Should not submit when only date and comment is filled  ", ()=>{
 
 
 
-it.only("Should not submit when only name and comment is filled  ", ()=>{
-    cy.get('#fName').type("Victor");
+it("Should not submit when only name and comment is filled  ", ()=>{
+    cy.get('#fName').type("Umar");
     // cy.get('#date').type("2021-05-05");
     // cy.get('#no-of-people').type(6);
     cy.get('textarea').type("Travelling back to Kumasi");
@@ -202,8 +202,8 @@ it.only("Should not submit when only name and comment is filled  ", ()=>{
 });
 
 
-it.only("Should not submit when only no of people and comment is filled  ", ()=>{
-    // cy.get('#fName').type("Victor");
+it("Should not submit when only no of people and comment is filled  ", ()=>{
+    // cy.get('#fName').type("Umar");
     // cy.get('#date').type("2021-05-05");
     cy.get('#no-of-people').type(6);
     cy.get('textarea').type("Travelling back to Kumasi");
@@ -236,7 +236,7 @@ it.only("Should not submit when only no of people and comment is filled  ", ()=>
 //     // Positive Values
 //     it("Fill form with one way trip", () => {
 //         cy.url().should('include', 'BusTicketingForm')
-//         cy.get('[data-testid=username]').type("Victor Aremu")
+//         cy.get('[data-testid=username]').type("UmarBunyaminu")
 //         cy.get('[data-testid=one]').click()
 //         cy.get('[data-testid=date]').type('2021-07-03')
 //         cy.get('[data-testid=passengers]').type(5)
@@ -245,7 +245,7 @@ it.only("Should not submit when only no of people and comment is filled  ", ()=>
 //     })
 //     it("Fill form with round way trip", () => {
 //         cy.url().should('include', 'BusTicketingForm')
-//         cy.get('[data-testid=username]').type("Victor Aremu")
+//         cy.get('[data-testid=username]').type("UmarBunyaminu")
 //         cy.get('[data-testid=round]').click()
 //         cy.get('[data-testid=date]').type('2021-07-03')
 //         cy.get('[data-testid=passengers]').type(5)
@@ -264,7 +264,7 @@ it.only("Should not submit when only no of people and comment is filled  ", ()=>
 //     it("submit fields one after the other (one trip)", ()=>{
 //         cy.url().should('include', 'BusTicketingForm')
 //         cy.get('[data-testid=submit]').click()
-//         cy.get('[data-testid=username]').type("Victor Aremu")
+//         cy.get('[data-testid=username]').type("UmarBunyaminu")
 //         cy.get('[data-testid=submit]').click()
 //         cy.get('[data-testid=one]').click()
 //         cy.get('[data-testid=submit]').click()
@@ -278,7 +278,7 @@ it.only("Should not submit when only no of people and comment is filled  ", ()=>
 //     it("submit fields one after the other (round trip)", ()=>{
 //         cy.url().should('include', 'BusTicketingForm')
 //         cy.get('[data-testid=submit]').click()
-//         cy.get('[data-testid=username]').type("Victor Aremu")
+//         cy.get('[data-testid=username]').type("UmarBunyaminu")
 //         cy.get('[data-testid=submit]').click()
 //         cy.get('[data-testid=round]').click()
 //         cy.get('[data-testid=submit]').click()
@@ -292,7 +292,7 @@ it.only("Should not submit when only no of people and comment is filled  ", ()=>
 
 //     it("username field test", ()=>{
 //         cy.url().should('include', 'BusTicketingForm')
-//         cy.get('[data-testid=username]').type("Victor Aremu")
+//         cy.get('[data-testid=username]').type("UmarBunyaminu")
 //         cy.get('[data-testid=submit]').click()
 //         cy.contains("Select A Trip Type")
 //         cy.contains("Invalid Input in Passengers")
@@ -352,7 +352,7 @@ it.only("Should not submit when only no of people and comment is filled  ", ()=>
 //     })
 //     it("username and trip type (round)", ()=>{
 //         cy.url().should('include', 'BusTicketingForm')
-//         cy.get('[data-testid=username]').type("Victor Aremu")
+//         cy.get('[data-testid=username]').type("UmarBunyaminu")
 //         cy.get('[data-testid=round]').click()
 //         cy.get('[data-testid=submit]').click()
 //         cy.contains("Enter Valid Date")
@@ -360,7 +360,7 @@ it.only("Should not submit when only no of people and comment is filled  ", ()=>
 //     })
 //     it("username and trip type (one)", ()=>{
 //         cy.url().should('include', 'BusTicketingForm')
-//         cy.get('[data-testid=username]').type("Victor Aremu")
+//         cy.get('[data-testid=username]').type("UmarBunyaminu")
 //         cy.get('[data-testid=one]').click()
 //         cy.get('[data-testid=submit]').click()
 //         cy.contains("Enter Valid Date")
@@ -368,7 +368,7 @@ it.only("Should not submit when only no of people and comment is filled  ", ()=>
 //     })
 //     it("username and date", ()=>{
 //         cy.url().should('include', 'BusTicketingForm')
-//         cy.get('[data-testid=username]').type("Victor Aremu")
+//         cy.get('[data-testid=username]').type("UmarBunyaminu")
 //         cy.get('[data-testid=date]').type('2021-06-03')
 //         cy.get('[data-testid=submit]').click()
 //         cy.contains("Invalid Input in Passengers")
